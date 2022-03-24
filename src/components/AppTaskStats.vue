@@ -14,7 +14,7 @@ defineProps<{title: string}>();
         name="icon"
       />
     </i>
-    <span class="text-yellow-800">
+    <span class="text-yellow-800 font-secondary">
       <slot />
     </span>
   </div>

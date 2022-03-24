@@ -7,7 +7,7 @@ defineProps<{task: StateTask}>();
 
 <template>
   <div>
-    <h2 class="text-lg">
+    <h2 class="text-lg font-primary">
       {{ task.activity }}
     </h2>
   </div>

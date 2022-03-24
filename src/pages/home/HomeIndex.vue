@@ -13,14 +13,14 @@ const hasTask = computed(() => Object.keys(store.task).length);
 <template>
   <div class="container mx-auto">
     <header>
-      <AppTitle class="mx-auto md:w-1/2 lg:w-1/3 2xl:w-1/4">
+      <AppTitle class="mx-auto md:w-1/2 lg:w-1/3 2xl:w-1/4 font-primary">
         Tell me. What <strong>should</strong> I do? 🤔
       </AppTitle>
     </header>
     <main class="mt-6">
       <section>
         <AppButton @click="store.getTask">
-          Give me a task <span class="ml-2">🎁</span>
+          Give me an idea <span class="ml-2">🎁</span>
         </AppButton>
         <AppTask
           v-if="hasTask"
@@ -29,7 +29,7 @@ const hasTask = computed(() => Object.keys(store.task).length);
       </section>
     </main>
     <footer class="mt-4">
-      <div class="text-xs">
+      <div class="text-sm font-third">
         <span>
           data from <strong>boredapi.com</strong>
         </span>
